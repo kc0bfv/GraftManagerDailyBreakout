@@ -1,0 +1,7 @@
+Alright!  Day 1!  Here's your task:  Build out Libs/ManageAllGrafts.py.
+
+Please use the existing interfaces defined in the Libs directory - those in ManageAllGrafts.py and ManageSysgraft.py.
+
+You'll fill actual code into ManageSysgraft tomorrow, so make sure you use the interface that's defined already.  ManageSysgraft's functions even return things useful for your testing.
+
+Feel free to build extra classes or modules if you want!  For instance, I added a class whose objects represent command/response pairs.  It's possible to use a tuple for that, too, of course, and you can even have a tuple with timestamps for command/response in there, but it gets a little messy.

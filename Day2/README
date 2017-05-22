@@ -1,0 +1,11 @@
+Alright!  Day 2: electric boogaloo.
+
+What in the heck is your task today?  Build Libs/ManageSysgraft.py.
+
+Copy over the ManageAllGrafts you made yesterday - you should have used the ManageSysgraft interface that you're filling in today, so they should work together!
+
+You'll write the sockets code that connects to a target and sends it shellcode.  Simply connect, then send the shellcode in the shell attribute of architectures in Architectures.  After that, any text you send over the connection will be interpreted by /bin/sh.
+
+You'll also write the code that sends commands to the target then waits for the response.  How do you know when you've received the entirety of the response?  This code uses an overly-simplified method - it waits until it has been a certain amount of time since it has last seen output, then considers the response completed.  Consider using select to determine when traffic is ready to be received, with a timeout...  There are other ways to skin this problem though.
+
+Additionally, log actions taken against a target, data sent and data received.  Basically - log things that might be important if you're trying to be sneaky.  Consider using the logging module, or just "print"!  But, I recommend the logging module - it's awesome.  I recommend that you implement logging early - it can help you debug.

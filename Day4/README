@@ -1,0 +1,16 @@
+Day 4!  It's Thursday, Thursday, gotta get down on Thursday.  Off by one error.
+
+Finish up everything you haven't done with the basic parts, and the CLI.  The next step is a doozy - like, really.  The next step is nuts.  Don't worry about polish on the CLI parts, just get everything working and make sure you understand it.  Then do this one...
+
+
+Next step: Implement a Web interface for this sucker.
+
+Basic challenge: Understand the code provided, then fill in "add_graft" and "command_graft" to add grafts and command them.  You know?
+Advanced challenge: Wipe out my "GraftHTTPRequestHandler" class and write your own version.  You'll want to keep the "do_GET" function, but fill it in your own way.
+Uber challenge: Do this using Django.  If you're way ahead, you have time to go through Django's tutorial online and modify it to be your server.  It's a great tutorial.
+
+Crazy, right?  Like a fox.  Feel free to implement some other GUI if you think that'd be a better use of your time, but for compatibility between OSes, simplicity, and ease of programming I recommend building what is essentially a webserver.  Then the user's browser-of-choice will draw the GUI for you.
+
+If you were going to do this for real, you would use Django or something similar - Django is a Python web framework, it interfaces with Apache and your database and lets you use some awesome APIs.
+
+We're not doing this for real, though, so I recommend you extend Python's BaseHTTPServer.HTTPServer like I have done in GraftManagerServer.  There are a lot of usecases in real life where you might throw something like this together, things that are simpler than this big project, but lots of times you'll be doing something simpler.

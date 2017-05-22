@@ -1,0 +1,5 @@
+Day three:
+
+1. Modify ManageAllGrafts and ManageSysgraft to wait for command responses in the background.  I recommend using the threading module.  Consider what types of operations will require locks...  Also, consider tying timestamps to commands and responses - users will be sending commands at different times now, so that might be helpful to them.
+
+2. Fully implement the cli.  There should be a menu users choose their actions from.  Make it look good!  Eternal glory will be yours if you make the best ASCII art.
